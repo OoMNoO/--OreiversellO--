@@ -15,14 +15,12 @@ int leftdowncheck(int i,int j,char board[8][8],char player);
 void choice(int scorepoint[8][8],int target[]);
 int main(int argc,char* argv[])
 {
-
     int i,j,scorepoint[8][8],target[2]={0};
-	char board[8][8],player;
-	for(i=0;i<8;i++)
-		for(j=0;j<8;j++)
-			board[i][j]=argv[1+i][j];
-
-	score(scorepoint);
+    char board[8][8],player;
+    for(i=0;i<8;i++)
+	for(j=0;j<8;j++)
+		board[i][j]=argv[1+i][j];
+    score(scorepoint);
     player=argv[9][0];
 
     if(player=='1')
