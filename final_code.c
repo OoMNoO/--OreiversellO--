@@ -262,7 +262,7 @@ void nearcornerpoint(int scorepoint[8][8]){
     if(scorepoint[6][7]>0)
     	scorepoint[6][7]=1;
 }
-void choice(int scorepoint[8][8],int a[]){
+void choice(int scorepoint[8][8],int target[]){
 	int i,j,max=0;
     for(i=0;i<8;i++)
         for(j=0;j<8;j++)
