@@ -12,11 +12,11 @@ int rightupcheck(int i,int j,char board[8][8],char player);
 int rightdowncheck(int i,int j,char board[8][8],char player);
 int leftupcheck(int i,int j,char board[8][8],char player);
 int leftdowncheck(int i,int j,char board[8][8],char player);
-void choice(int scorepoint[8][8],int a[]);
+void choice(int scorepoint[8][8],int target[]);
 int main(int argc,char* argv[])
 {
 
-    int i,j,scorepoint[8][8],a[2]={0};
+    int i,j,scorepoint[8][8],target[2]={0};
 	char board[8][8],player;
 	for(i=0;i<8;i++)
 		for(j=0;j<8;j++)
@@ -36,8 +36,8 @@ int main(int argc,char* argv[])
             printf("%d ",scorepoint[i][j]);
         printf("\n");
     }*/
-    choice(scorepoint,a);
-    printf("%d %d",a[1],a[0]);
+    choice(scorepoint,target);
+    printf("%d %d",target[1],target[0]);
     return 0;
 }
 
@@ -270,7 +270,7 @@ void choice(int scorepoint[8][8],int a[]){
         for(j=0;j<8;j++)
         	if(scorepoint[i][j]>=max){
         		max=scorepoint[i][j];
-        		a[0]=i;
-			a[1]=j;
+        		target[0]=i;
+			target[1]=j;
         	}
 }
