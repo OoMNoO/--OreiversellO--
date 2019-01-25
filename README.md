@@ -1,0 +1,2 @@
+# -OTHELLO-
+Main Project
