@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void score(int scorepoint[8][8]);
 void Rowchecker(char board[8][8],int scorepoint[8][8],char player);
 void nearcornerpoint(int scorepoint[8][8]);
@@ -272,6 +271,6 @@ void choice(int scorepoint[8][8],int a[]){
         	if(scorepoint[i][j]>=max){
         		max=scorepoint[i][j];
         		a[0]=i;
-				a[1]=j;
+			a[1]=j;
         	}
 }
